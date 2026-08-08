@@ -3,25 +3,11 @@
 
 const NUM_ANEXOS = 5;
 const DEFAULT_DESCRIPTIONS = [
-  `Controlé el acceso de los usuarios en los embarques del sistema de
-transporte y optimicé la fluidez en las intersecciones de las vías cercanas por
-donde transitan las unidades de los corredores complementarios, COSAC I y/o
-AERODIRECTO.`,
-  `Verifiqué y monitoreé
-la operatividad en las instalaciones del COSAC I, Corredores Complementarios y/o
-AERODIRECTO, tales como estaciones, patios, terminales y paraderos que forman
-parte del sistema de transporte.`,
-  `Organicé
-los implementos viales en las instalaciones y/o vías del COSAC I, Corredores Complementarios
-y/o AERODIRECTO durante la prestación del servicio del sistema de transporte.`,
-  `Comuniqué sobre las
-incidencias y/o eventos presentados durante la operación del sistema de
-transporte.`,
-  `Notifiqué
-al centro de control las situaciones presentadas durante la operación de los
-Corredores Complementarios, COSAC I y/o AERODIRECTO que ocasionen retrasos,
-incumplimientos de programación, desvíos, buses averiados y otra información
-relevante.`
+  `Controlé el acceso de los usuarios en los embarques del sistema de transporte y optimicé la fluidez en las intersecciones de las vías cercanas por donde transitan las unidades de los corredores complementarios, COSAC I y/o AERODIRECTO.`,
+  `Verifiqué y monitoreé la operatividad en las instalaciones del COSAC I, Corredores Complementarios y/o AERODIRECTO, tales como estaciones, patios, terminales y paraderos que forman parte del sistema de transporte.`,
+  `Organicé los implementos viales en las instalaciones y/o vías del COSAC I, Corredores Complementarios y/o AERODIRECTO durante la prestación del servicio del sistema de transporte.`,
+  `Comuniqué sobre las incidencias y/o eventos presentados durante la operación del sistema de transporte.`,
+  `Notifiqué al centro de control las situaciones presentadas durante la operación de los Corredores Complementarios, COSAC I y/o AERODIRECTO que ocasionen retrasos, incumplimientos de programación, desvíos, buses averiados y otra información relevante.`
 ];
 
 const state = Array.from({length:NUM_ANEXOS}, (_,i) => ({ images:[null,null], description: DEFAULT_DESCRIPTIONS[i] || '' }));
