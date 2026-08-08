@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generador de Anexos</title>
+<link rel="stylesheet" href="css/generador-anexos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <div class="brand-title">Generador de Anexos</div>
+      <div class="brand-sub"> entregable — COV</div>
+    </div>
+    <div class="progress-pill" id="progressPill">0/5 completos</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="intro">
+    Completa las <b>5 fichas de anexo</b>: en cada una agrega <b>2 fotos</b> (toca el recuadro, arrastra el archivo, o
+    pega una imagen copiada con <b>Ctrl+V</b> — funciona igual en computadora o celular) y una breve
+    <b>descripción</b>. Al final presiona <b>Generar documentos</b> para descargar el Word (.docx) y el PDF listos
+    para entregar, con el mismo formato del modelo.
+  </div>
+
+  <div id="anexosContainer"></div>
+</div>
+
+<div class="actionbar">
+  <div class="actionbar-inner">
+    <div class="status-text" id="statusText">Listo para generar cuando completes los anexos.</div>
+    <button class="generate-btn" id="generateBtn">
+      <span class="spinner"></span>
+      <span id="generateLabel">Generar documentos (.docx + .pdf)</span>
+    </button>
+  </div>
+</div>
+
+<script src="js/generador-anexos.js"></script>
+</body>
+</html>
+
